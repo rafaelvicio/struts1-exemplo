@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE struts-config PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 1.0//EN"
+"http://jakarta.apache.org/struts/dtds/struts-config_1_0.dtd">
+<struts-config>
+	<action-mappings>
+		<action path="/teste" type="br.com.rafaelvicio.action.TesteSimplesAction">
+			<forward name="ok" path="/exemplo.jsp" />
+		</action>
+	</action-mappings>
+</struts-config>
+
+<init-param>
+	<param-name>config</param-name>
+	<param-value>/WEB-INF/classes/struts-config.xml</param-value>
+</init-param>
